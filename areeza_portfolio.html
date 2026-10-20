@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a Computer Science student interested in software and backend development.">
+  <title>Areeza Basheer | Developer Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a2d;
+      --panel2: #172139;
+      --text: #eef2ff;
+      --muted: #aab5ce;
+      --accent: #8b9cff;
+      --accent2: #74e0c1;
+      --line: rgba(255,255,255,.11);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(circle at 85% 5%, #202b52 0, transparent 28%), var(--bg);
+      color: var(--text); line-height: 1.65;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1080px, 91%); margin: auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:24px 0; gap:20px; }
+    .brand { font-weight:800; letter-spacing:.04em; font-size:1.05rem; }
+    .brand span { color:var(--accent2); }
+    .navlinks { display:flex; gap:22px; flex-wrap:wrap; }
+    .navlinks a { color:var(--muted); text-decoration:none; font-size:.92rem; }
+    .navlinks a:hover { color:var(--text); }
+    .hero { padding:82px 0 72px; display:grid; grid-template-columns:1.5fr .8fr; gap:48px; align-items:center; }
+    .eyebrow { color:var(--accent2); text-transform:uppercase; letter-spacing:.16em; font-size:.78rem; font-weight:800; }
+    h1 { font-size:clamp(2.7rem, 7vw, 5rem); line-height:1.04; letter-spacing:-.055em; margin:18px 0; }
+    h1 span { color:var(--accent); }
+    .lead { color:var(--muted); font-size:1.12rem; max-width:650px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
+    .btn { display:inline-block; padding:12px 18px; border-radius:12px; text-decoration:none; font-weight:750; border:1px solid var(--line); }
+    .primary { color:#10152b; background:var(--accent); border-color:var(--accent); }
+    .secondary { background:rgba(255,255,255,.04); }
+    .profile-card { padding:28px; border:1px solid var(--line); border-radius:24px; background:linear-gradient(145deg, rgba(139,156,255,.16), rgba(116,224,193,.06)); box-shadow:0 20px 70px rgba(0,0,0,.18); }
+    .avatar { width:76px; height:76px; display:grid; place-items:center; border-radius:22px; background:var(--accent); color:#10152b; font-size:1.65rem; font-weight:900; margin-bottom:22px; }
+    .profile-card h2 { margin:0 0 5px; font-size:1.3rem; }
+    .profile-card p { margin:0; color:var(--muted); }
+    .mini { display:flex; gap:9px; flex-wrap:wrap; margin-top:22px; }
+    .pill { padding:6px 10px; border:1px solid var(--line); border-radius:999px; font-size:.82rem; color:#dce3ff; background:rgba(255,255,255,.035); }
+    section { padding:58px 0; }
+    .section-title { font-size:clamp(1.8rem,4vw,2.5rem); letter-spacing:-.035em; margin:0 0 10px; }
+    .section-intro { color:var(--muted); max-width:720px; margin:0 0 28px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:24px; }
+    .card h3 { margin:0 0 8px; font-size:1.12rem; }
+    .card p { margin:0; color:var(--muted); }
+    .tagline { color:var(--accent2); font-size:.78rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; margin-bottom:10px; }
+    .skills { display:flex; gap:10px; flex-wrap:wrap; }
+    .skill { background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:10px 14px; }
+    .timeline { border-left:2px solid var(--line); padding-left:22px; display:grid; gap:20px; }
+    .timeline .card { position:relative; }
+    .timeline .card:before { content:""; width:10px; height:10px; border-radius:50%; background:var(--accent2); position:absolute; left:-29px; top:29px; }
+    .contact { display:flex; flex-wrap:wrap; gap:12px; }
+    .contact a { text-decoration:none; }
+    footer { padding:28px 0 40px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+    @media (max-width:760px) {
+      .hero { grid-template-columns:1fr; padding-top:48px; gap:28px; }
+      .grid { grid-template-columns:1fr; }
+      nav { align-items:flex-start; flex-direction:column; }
+      .navlinks { gap:14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand">AREEZA<span>.</span></div>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <div class="eyebrow">Computer Science Student · Aspiring Developer</div>
+          <h1>Hi, I'm Areeza.<br><span>I build and learn.</span></h1>
+          <p class="lead">I’m a Computer Science undergraduate at FAST-NUCES Karachi, interested in software development, backend systems, APIs, and database-driven applications. I enjoy turning ideas into practical projects and continuously strengthening my development skills.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">Explore my projects ↓</a>
+            <a class="btn secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <aside class="profile-card">
+          <div class="avatar">AB</div>
+          <h2>Quick introduction</h2>
+          <p>Curious, detail-oriented, and eager to grow through real-world development experience.</p>
+          <div class="mini"><span class="pill">Problem Solving</span><span class="pill">APIs & Databases</span><span class="pill">Continuous Learning</span></div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <div class="eyebrow">A little about me</div>
+        <h2 class="section-title">Learning by building</h2>
+        <p class="section-intro">My academic work has introduced me to programming fundamentals, data structures, database design, and application development. I’m working toward becoming a stronger developer by building projects, understanding how systems work end to end, and learning from feedback.</p>
+      </section>
+
+      <section id="skills">
+        <div class="eyebrow">My toolkit</div>
+        <h2 class="section-title">Skills & technologies</h2>
+        <p class="section-intro">Edit this list to include only technologies you can comfortably discuss in an interview.</p>
+        <div class="skills">
+          <span class="skill">C++</span><span class="skill">Java</span><span class="skill">Python</span>
+          <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span>
+          <span class="skill">SQL / PostgreSQL</span><span class="skill">REST API Fundamentals</span>
+          <span class="skill">Git & GitHub</span><span class="skill">Data Structures</span><span class="skill">Database Design</span>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="eyebrow">Selected academic work</div>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-intro">These project summaries are based on academic work and project concepts. Update the status and details to match what you have actually implemented.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="tagline">Recommendation Systems · Course Project</div>
+            <h3>Resume-to-Job Matching & Skill Gap Recommender</h3>
+            <p>A recommendation-system concept that compares a candidate’s skills with job requirements and identifies potential skill gaps. The goal is to provide understandable matching results and useful learning recommendations.</p>
+            <div class="mini"><span class="pill">Recommendation Systems</span><span class="pill">Explainable Results</span></div>
+          </article>
+          <article class="card">
+            <div class="tagline">Mobile App · Final-Year Project</div>
+            <h3>Uswah — Islamic Character Development</h3>
+            <p>A proposed mobile application that helps young people reflect on character traits through lessons from Qur’anic guidance, Hadith, and Islamic role models, supported by reflection activities and personal progress tracking.</p>
+            <div class="mini"><span class="pill">Mobile App Concept</span><span class="pill">Personalized Guidance</span></div>
+          </article>
+          <article class="card">
+            <div class="tagline">Digital Logic Design · Academic Project</div>
+            <h3>Password Verification System</h3>
+            <p>A digital logic design project focused on checking password input and providing feedback through an input interface and feedback mechanisms.</p>
+            <div class="mini"><span class="pill">Logic Design</span><span class="pill">Verification</span></div>
+          </article>
+          <article class="card">
+            <div class="tagline">Practice & Development</div>
+            <h3>Web Development Practice</h3>
+            <p>Building foundational skills in HTML and CSS and learning how to structure responsive pages, organize content, and improve user experience.</p>
+            <div class="mini"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">Responsive Design</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="eyebrow">Education</div>
+        <h2 class="section-title">My academic journey</h2>
+        <div class="timeline">
+          <article class="card">
+            <div class="tagline">Undergraduate</div>
+            <h3>BS Computer Science</h3>
+            <p>FAST — National University of Computer and Emerging Sciences, Karachi Campus</p>
+            <p style="margin-top:8px">Relevant areas: programming, data structures, databases, software development, and recommendation systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="eyebrow">Let's connect</div>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">Replace the placeholders below with your real contact details before sharing this portfolio.</p>
+        <div class="contact">
+          <a class="btn primary" href="mailto:YOUR.EMAIL@example.com">Email me</a>
+          <a class="btn secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+    <footer>© 2026 Areeza Basheer · Portfolio website. Built with HTML and CSS.</footer>
+  </div>
+</body>
+</html>
